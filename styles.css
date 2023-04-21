@@ -1,0 +1,62 @@
+
+*{
+    margin: 0px;
+    padding: 0px;    
+}
+
+
+header{
+    background-color:beige;
+}
+
+.navbar-toggler-icon {
+    background: url('https://api.iconify.design/mdi/hamburger-menu.svg') 
+    no-repeat center center / contain;
+    color: aquamarine;
+}
+
+@media (min-width: 900px) {
+        #carouselExample{
+            width: 70%;
+            margin: 0 auto;
+        }
+
+        .carousel-item img {
+        height: 550px;
+    }
+        
+    
+}
+
+.ropa {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px 
+}
+
+    @media (min-width: 768px) {
+        .ropa {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        } 
+    
+    }
+
+    .productos{
+        width: 150px;
+        height: 150px;
+    }
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1em;
+    grid-template-rows: minmax(100px auto);
+}
+
+.grid :hover{
+    background: beige;
+    padding: 1em;
+    border: 1px solid #f1c40f;
+}
